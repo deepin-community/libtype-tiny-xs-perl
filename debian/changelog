@@ -1,0 +1,131 @@
+libtype-tiny-xs-perl (0.022-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ intrigeri ]
+  * Remove myself from Uploaders
+
+  [ Jonas Smedegaard ]
+  * copyright info: update coverage
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 07 Feb 2021 02:50:34 +0100
+
+libtype-tiny-xs-perl (0.021-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release(s)
+    + quoted encoding for Enum[] in Type::Tiny
+
+  [ Jonas Smedegaard ]
+  * simplify source script copyright-chceck
+  * watch:
+    + use format version 4
+    + drop duplicate source
+    + rewrite usage comment
+  * wrap-and-sort control file, with shortening options
+  * copyright:
+    + fix revert addition of non-verbatim copyright statements
+    + fix stop track no longer shipped files
+    + use License-Reference
+    + fix double-indent copyright holders
+    + extend coverage
+  * fix license-related lintian overrides (see bug#786450)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 20 Aug 2020 20:34:39 +0200
+
+libtype-tiny-xs-perl (0.019-1) unstable; urgency=medium
+
+  * Import new upstream release
+
+ -- intrigeri <intrigeri@debian.org>  Sat, 08 Aug 2020 08:21:45 +0000
+
+libtype-tiny-xs-perl (0.017-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.4.1, no changes needed.
+
+  [ intrigeri ]
+  * New upstream release
+  * Update upstream copyright year
+  * Declare compliance with Debian Policy 4.5.0
+  * Tag test-only build dependencies as <!nocheck>
+  * Cross building support: use 'perl:native' and 'perl-xs-dev' in Build-Depends
+  * Set Rules-Requires-Root: no
+  * Bump debhelper compatibility level to 13
+  * Add myself to debian/* copyright holders
+
+ -- intrigeri <intrigeri@debian.org>  Sat, 16 May 2020 07:32:31 +0000
+
+libtype-tiny-xs-perl (0.016-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump debhelper compat level to 12
+  * Declare compatibility with policy 4.4.0.
+  * Reformat debian/control with "dh-make-perl --refresh".
+  * Update upstream copyright information.
+
+ -- intrigeri <intrigeri@debian.org>  Mon, 16 Sep 2019 12:19:44 +0000
+
+libtype-tiny-xs-perl (0.014-1) unstable; urgency=medium
+
+  * New upstream release
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * debian/*: update URLs from {search,www}.cpan.org to MetaCPAN.
+  * debian/*: update GitHub URLs to use HTTPS.
+
+  [ Clément Hermann ]
+  * Convert to dh
+  * d/copyright:
+        - switch urls to https
+        - Refresh Copyright on debian/*
+  * Add copyright-check copyright generation script
+  * d/upstream/metadata: use https urls
+  * d/gbp.conf: update import-orig section name
+  * d/control:
+         - Add intrigeri and nodens to the Uploaders field
+         - wrap-and-sort
+         - Bump compat-level to 11
+         - Bump Standards-Version to 4.1.5 (no further change)
+  * add lintian overrides for debian/copyright (specific
+    machine-readable format)
+
+ -- Clément Hermann <nodens@nodens.org>  Sat, 04 Aug 2018 15:52:50 +0800
+
+libtype-tiny-xs-perl (0.012-2) unstable; urgency=medium
+
+  * Team upload.
+  * Enable the autopkgtest-pkg-perl test suite.
+  * Enable all hardening build options.
+
+ -- intrigeri <intrigeri@debian.org>  Sun, 21 Jan 2018 17:58:51 +0000
+
+libtype-tiny-xs-perl (0.012-1) unstable; urgency=medium
+
+  [ upstream ]
+  * New release(s).
+    + Fix for PositiveInt/PositiveOrZeroInt.
+    + Repackage with newer Dist::Inkt to fix META.json error.
+
+  [ intrigeri ]
+  * Add debian/upstream/metadata.
+
+  [ Jonas Smedegaard ]
+  * Declare compliance with Debian Policy 3.9.6.
+  * Update copyright info:
+    + Extend copyrigt coverage for myself to include current year.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 26 Feb 2015 13:43:08 +0100
+
+libtype-tiny-xs-perl (0.010-1) unstable; urgency=low
+
+  * Initial packaging.
+    Closes: bug#759468.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 27 Aug 2014 13:08:48 +0200

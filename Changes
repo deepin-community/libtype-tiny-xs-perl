@@ -1,0 +1,159 @@
+Type-Tiny-XS
+============
+
+Created:      2014-07-10
+Home page:    <https://metacpan.org/release/Type-Tiny-XS>
+Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Type-Tiny-XS>
+Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
+
+0.022	2020-09-25
+
+ - Added: ArrayLike, HashLike, CodeLike, and StringLike checks.
+
+0.021	2020-08-18
+
+ [ Bug Fixes ]
+ - Fix Enum test case for when Type::Parser is not available.
+
+0.020	2020-08-17
+
+ - Allow Enum[] to take a list of quoted strings rather than just
+   barewords.
+   Andrew Ruder++
+   <https://github.com/tobyink/p5-type-tiny-xs/pull/12>
+
+0.019	2020-08-05
+
+ [ Packaging ]
+ - Remove some cruft that was accidentally packaged.
+
+0.018	2020-08-05
+
+ [ Test Suite ]
+ - Tests for InstanceOf
+
+ [ Other ]
+ - Slight speed boost for InstanceOf in cases where the object being tested
+   overrides UNIVERSAL::isa.
+
+0.017	2020-04-28
+
+ [ Bug Fixes ]
+ - Fix segfault in BOOT.
+   Fixes RT#130458.
+   Tomasz Konojacki++
+   <https://rt.cpan.org/Ticket/Display.html?id=130458>
+   <https://github.com/tobyink/p5-type-tiny-xs/pull/11>
+
+0.016	2019-09-05
+
+ [ Bug Fixes ]
+ - Fix Int check on large unsigned integers.
+   Graham Knop++
+   <https://github.com/tobyink/p5-type-tiny-xs/pull/9>
+
+0.015	2019-09-03
+
+ [ Bug Fixes ]
+ - Casting a non-integer number to an integer elsewhere mistakenly caused
+   the Int check to think the non-integer was an integer.
+   Curtis "Ovid" Poe++
+   <https://github.com/tobyink/p5-type-tiny-xs/issues/8>
+
+0.014	2018-05-20
+
+ [ Bug Fixes ]
+ - Bool was letting overloaded blessed objects pass the type constraint. It
+   shouldn't.
+   Gregory Oschwald++
+   <https://github.com/tobyink/p5-type-tiny-xs/issues/5>
+
+0.013	2018-05-15
+
+ [ Bug Fixes ]
+ - Strings like '00' and '000' shouldn't be accepted as PositiveInt.
+   Will Storey++
+   <https://github.com/tobyink/p5-type-tiny-xs/issues/7>
+
+0.012	2014-09-17
+
+ [ Packaging ]
+ - Repackage with newer Dist::Inkt to fix META.json error.
+
+0.011	2014-09-07
+
+ [ Bug Fixes ]
+ - Fix for PositiveInt/PositiveOrZeroInt.
+   Fixes RT#98631.
+   Steven Lee++
+   <https://rt.cpan.org/Ticket/Display.html?id=98631>
+
+0.010	2014-07-22
+
+ [ Bug Fixes ]
+ - Type constraint subs can now be called with no parameters and will
+   pretend that you passed them undef. This makes them behave more like
+   Type::Tiny's PP implementation, where there are no argument count
+   checks.
+   Jed Lund++
+   <https://github.com/tobyink/p5-type-tiny-xs/issues/1>
+
+0.009	2014-07-22
+
+ [ Bug Fixes ]
+ - Move variable declarations to the beginning of blocks, for better C90
+   compliance. Should compile now in MSVC.
+   Jason R Mash++
+   <https://gist.github.com/jrmash/42e9e36606fb6e61597a>
+   <https://github.com/tobyink/p5-type-tiny-xs/issues/2>
+
+0.008	2014-07-21
+
+ - Added: AllOf (which will be used by a future release of
+   Type::Tiny::Intersection).
+ - Added: AnyOf (which will be used by a future release of
+   Type::Tiny::Union).
+
+0.007	2014-07-20
+
+ - Added: Enum (which will be used by a future release of Types::Standard).
+
+0.006	2014-07-20
+
+ - Added: Map (which will be used by a future release of Types::Standard).
+ - Added: Tuple (which will be used by a future release of
+   Types::Standard).
+ - Attempt to load Type::Parser to handle the occasional complex type name
+   parsing task.
+
+0.005	2014-07-19
+
+ [ Documentation ]
+ - Document that Type::Tiny::XS is now being used by Type::Tiny.
+
+ [ Other ]
+ - Added: NonEmptyStr (which will be used by a future release of
+   Types::Common::String).
+ - Added: PositiveInt (which will be used by a future release of
+   Types::Common::Numeric).
+ - Added: PositiveOrZeroInt (which will be used by a future release of
+   Types::Common::Numeric).
+
+0.004	2014-07-11
+
+ [ Documentation ]
+ - Clarify extent of supported API.
+ - Mention that get_*_for functions return undef if they cannot provide a
+   suitable sub.
+
+0.003	2014-07-11
+
+ - Further improvements to the Int check.
+
+0.002	2014-07-10
+
+ - Added: Provide Type::Tiny::XS::is_known() function.
+ - Make Int check act more like Type::Tiny.
+ - Make Object check act more like Type::Tiny.
+
+0.001	2014-07-10	Initial release
