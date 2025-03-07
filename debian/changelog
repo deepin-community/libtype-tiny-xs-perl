@@ -1,3 +1,42 @@
+libtype-tiny-xs-perl (0.025-2) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Update lintian override info format in d/source/lintian-overrides on
+    line 2-7.
+  * Update standards version to 4.6.2, no changes needed.
+
+  [ gregor herrmann ]
+  * Remove build artifacts via debian/clean. (Closes: #1049144)
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 08 Mar 2024 20:28:14 +0100
+
+libtype-tiny-xs-perl (0.025-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release(s)
+
+  [ Jonas Smedegaard ]
+  * update copyright info:
+    + update coverage
+    + use field Reference (not License-Reference)
+    + update Upstream-Contact
+  * declare compliance with Debian Policy 4.6.1
+  * update git-buildpackage config:
+    + use DEP-14 git branches
+    + enable automatic DEP-14 branch name handling
+    + add usage config
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 21 Oct 2022 14:43:52 +0200
+
+libtype-tiny-xs-perl (0.022-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + libtype-tiny-xs-perl: Add Multi-Arch: same.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Fri, 27 May 2022 22:04:24 +0100
+
 libtype-tiny-xs-perl (0.022-1) unstable; urgency=medium
 
   [ upstream ]
