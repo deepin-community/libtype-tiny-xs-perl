@@ -12,9 +12,12 @@ Files: CREDITS
  Makefile.PL
  Util.xs
  XS.xs
+ debian/control
+ debian/copyright-check
  debian/gbp.conf
  debian/rules
  debian/source/format
+ debian/source/lintian-overrides
  debian/upstream/metadata
  debian/watch
  dist.ini
@@ -45,6 +48,7 @@ Files: README
  t/08enum.t
  t/09anyof_allof.t
  t/10bool.t
+ t/12scalarref.t
  t/99parsing.t
  t/gh8.t
 Copyright: 2014, 2018, Toby Inkster.
@@ -52,60 +56,46 @@ Copyright: 2014, 2018, Toby Inkster.
   2014, Toby Inkster.
   2018, Toby Inkster.
   2019, Toby Inkster.
-License: Artistic or GPL-1+
+  2022, Toby Inkster.
+License: UNKNOWN
  FIXME
 
 Files: LICENSE
 Copyright: 1989, Free Software Foundation, Inc.
-  19xx name of author
-  19yy <name of author>
-  2020, Toby Inkster.
-  disclaimer" for the program, if
-  ed by the Free
-  interest in the
-  of this Package, but belong to whomever generated them, and may be sold
-  the software, and
-License: Artistic or GPL-1+ and/or Artistic-1.0 and/or GPL-1
+  2022, Toby Inkster.
+License: Artistic-1.0 and/or GPL-1 and/or Perl
  FIXME
 
 Files: COPYRIGHT
-Copyright: -format/1.0/
-  2020, the copyright holder(s).
+Copyright: 2014, Toby Inkster.
+  2020, Toby Inkster.
+  2022, Toby Inkster.
+  2022, the copyright holder(s).
   CREDITS
-  Copyright 2014 Toby Inkster.
-  Copyright 2020 Toby Inkster.
   None
   This software is copyright (c) 2014 by Toby Inkster.
   This software is copyright (c) 2014, 2018 by Toby Inkster.
   This software is copyright (c) 2014, 2018-2020 by Toby Inkster.
   This software is copyright (c) 2018 by Toby Inkster.
   This software is copyright (c) 2019 by Toby Inkster.
+  This software is copyright (c) 2022 by Toby Inkster.
   Unknown
-License: Artistic-1.0 and/or GPL-1
+License: Artistic-1.0 and/or GPL-1 and/or public-domain
  FIXME
 
 Files: ppport.h
-Copyright: 
+Copyright: 0x2000, 0x200A)
   1999, Kenneth Albanowski.
   2001, Paul Marquess.
-  Version 3.x, Copyright (c) 2004-2010, Marcus Holland-Moritz.
-  s*^(.*?)^=w+/ms;
-License: UNKNOWN
+  2004-2013, Marcus Holland-Moritz.
+  LATIN1_TO_NATIVE(c))
+  NATIVE_TO_LATIN1(c))
+License: Perl
  FIXME
 
-Files: debian/copyright-check
-Copyright: --deb-machine --ignore '^(debian/(changelog|copyright(_hints)?))$' --lines 0 -- * > debian/copyright_hints
-License: UNKNOWN
- FIXME
-
-Files: debian/source/lintian-overrides
-Copyright: Artistic
-  GPL-1+
-  GPL-3+
-  artistic
-  gpl-1+
-  gpl-3+
-License: UNKNOWN
+Files: xshelper.h
+Copyright: 2010, Fuji, Goro (gfx).
+License: Perl
  FIXME
 
 Files: MANIFEST
@@ -113,18 +103,8 @@ Copyright: CREDITS
 License: UNKNOWN
  FIXME
 
-Files: xshelper.h
-Copyright: 2010, Fuji, Goro (gfx).
-License: UNKNOWN
- FIXME
-
 Files: SIGNATURE
 Copyright: SHA256 0d671bbe14d4ad7abbeec35fe17b2725aca2654e2002cb1315db64fb34713731 CREDITS
-License: UNKNOWN
- FIXME
-
-Files: debian/control
-Copyright: ment Hermann <nodens@nodens.org>,
 License: UNKNOWN
  FIXME
 
